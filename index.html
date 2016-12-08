@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:700|Damion|Open+Sans|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <style>
@@ -55,6 +56,9 @@
           font-family: 'Roboto', sans-serif;
           display: flex;
           align-items: center;
+          top: 0px;
+          position: fixed;
+          width: 100%;
         }
 
         .jumbotron h1 {
@@ -70,6 +74,11 @@
 
         .btn-width {
             width: 120px;
+        }
+
+        .quote {
+          color: white;
+          font-family: 'Playball', cursive;
         }
 
         @media (max-width: 767px) {
@@ -92,7 +101,7 @@
     <body>
         <!-- Navbar -->
         <div class="navigation">
-            <nav class="navbar navbar-default navbar-fixed-top">
+            <nav class="navbar navbar-default navbar-static-top">
 
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -119,8 +128,9 @@
         <!-- Jumbotron -->
         <div class="jumbotron">
             <div class="container text-center">
+                <p class="quote">"Never stop learning, because life never stops teaching"</p>
                 <h1>Marco Orcullo</h1>
-                <p>IT Student aspiring to become a Web Developer / Programmer.</p>
+                <p><small>IT Student aspiring to become a Web Developer / Programmer.</small></p>
                 <ul class="list-inline">
                   <li><a href="#" class="btn btn-success btn-width">My Portfolio</a></li>
                   <li><a href="#" class="btn btn-primary btn-width">Contact</a></li>
