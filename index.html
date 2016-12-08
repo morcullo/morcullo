@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Marco Orcullo</title>
     <meta charset="utf-8">
@@ -8,44 +9,70 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <style>
-    .navbar-brand {
-        padding: 0px;
+        .navbar-brand {
+            padding: 0px;
+        }
+
+        .navbar-brand>img {
+            height: 100%;
+            padding: 15px;
+            width: auto;
+        }
+
+        .navigation .navbar-brand>img {
+            padding: 0px;
+        }
+
+        .navbar {
+          margin: 0;
+        }
+
+        .jumbotron {
+          background-image: url("images/jumbotron.jpg");
+          background-size: cover;
+          color: white;
+          padding: 150px;
+        }
     }
-    .navbar-brand>img {
-        height: 100%;
-        padding: 15px;
-        width: auto;
-    }
-    .navigation .navbar-brand>img {
-        padding: 0px;
-    }
-}
     </style>
 </head>
+
     <body>
         <!-- Navbar -->
         <div class="navigation">
-          <nav class="navbar navbar-default">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="images/logo2.png" class="img-responsive" alt="m"></a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="#">HOME</a></li>
-                  <li><a href="#">ABOUT</a></li>
-                  <li><a href="blog.html">BLOG</a></li>
-                  <li><a href="#">CONTACT</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/logo2.png" class="img-responsive" alt="m"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
         <!-- Navbar end -->
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Marco Orcullo</h1>
+                <p>Web Developer, Programmer and Student.</p>
+            </div>
+        </div>
+        <!-- Jumbotron end -->
+
+
     </body>
+
 </html>
