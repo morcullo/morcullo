@@ -19,10 +19,9 @@
          $(document).scroll(function() {
             scroll_start = $(this).scrollTop();
             if(scroll_start > offset.top) {
-                $(".navbar-default").css('background-color', '#2c3e50');
-                $(".navbar-default").css('opacity', '0.95');
+                $(".navbar-default").css('display', 'none');
              } else {
-                $('.navbar-default').css('background-color', 'transparent');
+                $('.navbar-default').css('display', 'block');
              }
          });
           }
@@ -97,12 +96,19 @@
         }
 
         .quote {
-          color: white;
           font-family: 'Playball', cursive;
         }
 
         .container .row {
-          padding: 40px 0px;
+          padding: 90px 0px;
+        }
+
+        .bg-1 {
+          background-color: #edeeef;
+        }
+
+        .bg-2 {
+          background-image: url("images/restaurant.png");
         }
 
         @media (max-width: 767px) {
@@ -168,15 +174,77 @@
         <!-- About -->
           <div class="container">
             <div class="row">
-              <div class="col-sm-4">
-                <div class="text-center">
+              <div class="col-sm-4 text-center">
                   <img src="images/marco.jpg" alt="Marco" class="img-circle" height="300">
                   <p><br><strong>Marco Orcullo</strong></p>
                   <p>Born on: November 24, 1994</p>
+              </div>
+              <div class="col-sm-8">
+                <h2>About Me</h2>
+                  <p>Hello! My name is <strong>Marco Orcullo</strong>. I am currently a student at Red River College in the
+                  Business Information Technology program. I was born and raised in Winnipeg, Manitoba, Canada. I started to
+                  learn web development back in middle school during the good old "Asianavenue" days! It became a passion of
+                  mine and thats why I chose to pursue it as a career.</p>
+                  <h4><strong>I also really enjoy:</strong></h4>
+                  <dl class="dl-horizontal">
+                    <dt>PC Gaming</dt>
+                    <dd>League of Legends, CS:GO and Overwatch.</dd>
+                    <dt>Sports</dt>
+                    <dd>Basketball, Softball, Volleyball and Football</dd>
+                    <dt>Programming</dt>
+                    <dd>Java, C#, Ruby, and PHP</dd>
+                    <dt>Cooking</dt>
+                    <dd>Meal preping, Baking, BBQ</dd>
+                  </dl>
+                  <h4><strong>Fun facts about me:</strong></h4>
+                  <ol>
+                    <li>I have one younger sister that gets on my nerves 24/7.</li>
+                    <li>My parents moved here from the Philippines in the 90's and I was born here.</li>
+                    <li>In the 4th grade I had a crush on twins but then I moved to the other end of the city.</li>
+                    <li>When I was 20 I saw one of the twins at a bar and she still remembered me!</li>
+                    <li>I once lost over 30 pounds but eventually gained it back :/</li>
+                  </ol>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote -->
+          <div class="bg-1">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h2 class="quote"><mark>"Never stop learning, because life never stops teaching"</mark></h2>
+                  <p>
+                    <br>
+                    Coming from a family where both my parents highest level of education was highschool I took import
+                    upon myself to break that mold. Living in Canada has been to set this dream of mine in motion and I currently
+                    am in my third term of the Business Information Technology Program at the Red River Collegiate. Coming out of
+                    highschool I didn't know what I wanted to study but I knew I had always loved computers and pretty much anything
+                    tech related and thats what lead to me enroll into my couse. Now here I am 3 terms later and still going strong.
+                  </p>
                 </div>
               </div>
-              <div class="col-sm-8 text-center">
-                <h2>About Me</h2>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div>
+            <div class="container text-center">
+              <div class="row">
+                <h2>Find me on Social Media!</h2>
+                <div class="col-sm-4">
+                    <a href="http://www.facebook.com/maaaarco"><img src="images/facebook.png" alt="Marco" class="img-circle" height="200">
+                    <p><br><strong>Facebook</strong></p></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="http://www.twitter.com/marcoorcullo"><img src="images/twitter.png" alt="Marco" class="img-circle" height="200">
+                  <p><br><strong>Twitter</strong></p></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="http://www.instagram.com/marcoorcullo"><img src="images/instagram.png" alt="Marco" class="img-circle" height="200">
+                  <p><br><strong>Instagram</strong></p></a>
+                </div>
               </div>
             </div>
           </div>
