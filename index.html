@@ -27,6 +27,16 @@
           }
       });
     </script>
+    <script src="js/typed.js"></script>
+    <script>
+      $(function(){
+          $(".blink").typed({
+            strings: ["^300 IT Student ^1000", "Web Developer ^1000", "Programmer ^1000", "PC Gamer ^1000"],
+            typeSpeed: 0,
+            loop: true
+          });
+      });
+    </script>
     <style>
         body {
           font-family: 'Open Sans', sans-serif;
@@ -69,7 +79,7 @@
         .navbar-default .navbar-toggle {
             border-color: transparent;
         }
-        
+
         .jumbotron {
           background-image: url("images/jumbotron.jpg");
           background-size: cover;
@@ -133,6 +143,28 @@
             margin: 0px;
           }
         }
+
+        .typed-cursor{
+            opacity: 1;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
     </style>
 </head>
 
@@ -165,7 +197,7 @@
         <div id="startchange" class="jumbotron">
             <div class="container text-center">
                 <h1>Marco Orcullo</h1>
-                <p><mark>IT Student aspiring to become a Web Developer / Programmer.</mark></p>
+                <p><mark>Hello! I'm a</mark><mark class="blink"></mark></p>
                 <ul class="list-inline">
                   <li><a href="#" class="btn btn-success btn-width">My Portfolio</a></li>
                   <li><a href="#" class="btn btn-primary btn-width">Contact</a></li>
